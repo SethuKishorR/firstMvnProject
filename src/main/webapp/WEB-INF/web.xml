@@ -1,0 +1,39 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<element>
+<web-app xmlns="http://java.sun.com/xml/ns/javaee"
+         xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+         xsi:schemaLocation="http://java.sun.com/xml/ns/javaee http://java.sun.com/xml/ns/javaee/web-app_2_5.xsd"
+         version="2.5">
+
+  <display-name>firstMvnProject</display-name>
+
+  <welcome-file-list>
+    <welcome-file>index.html</welcome-file>
+  </welcome-file-list>
+
+  <servlet>
+    <description>Add User Servlet</description>
+    <display-name>addUser</display-name>
+    <servlet-name>addUser</servlet-name>
+    <servlet-class>com.tap.servlets.addUser</servlet-class>
+  </servlet>
+
+  <servlet-mapping>
+    <servlet-name>addUser</servlet-name>
+    <url-pattern>/addUser</url-pattern>
+  </servlet-mapping>
+
+  <servlet>
+    <description>AddUser Servlet</description>
+    <display-name>AddUser</display-name>
+    <servlet-name>AddUser</servlet-name>
+    <servlet-class>com.tap.servlet.AddUser</servlet-class>
+  </servlet>
+
+  <servlet-mapping>
+    <servlet-name>AddUser</servlet-name>
+    <url-pattern>/AddUser</url-pattern>
+  </servlet-mapping>
+
+</web-app>
+</element>
